@@ -84,7 +84,7 @@ def text(message):
   elif "Взять cat" == message.text:
     buy(10, message, "cat", tasks, bot)
   elif "qwqefg43t3df" == message.text:
-    tasks[message.chat.id]['point'] += 1000000
+    tasks[message.chat.id]['point'] += 100000
   elif "Предметы" == message.text:
     bot.reply_to(message, "soon...")
     
