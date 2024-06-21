@@ -1,0 +1,7 @@
+key.py
+__pycache__
+poetry.lock  
+pyproject.toml
+users.txt
+tasks.json
+replit.nix
