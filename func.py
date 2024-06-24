@@ -4,7 +4,6 @@ from telebot import types
 def create_task(message, tasks, bot):
   task = message.text
   id = message.chat.id
-  tasks[id]['tasksous'] = []
   tasks[id]['tasksous'].append(task)
   bot.reply_to(message, "Задача добавлена")
 

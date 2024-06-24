@@ -16,6 +16,7 @@ def start(message):
     users.append(message.chat.id)
     tasks[message.chat.id] = {}
     tasks[message.chat.id]['point'] = 0
+    tasks[message.chat.id]['tasksous'] = []
   markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
   btn1 = types.KeyboardButton("Задачи")
   btn2 = types.KeyboardButton("Разработчики")
@@ -83,7 +84,7 @@ def text(message):
     buy(10, message, "dog", tasks, bot)
   elif "Взять cat" == message.text:
     buy(10, message, "cat", tasks, bot)
-  elif "qwqefg43t3df" == message.text:
+  elif "↑↑↓↓←→←→BAstart" == message.text:
     tasks[message.chat.id]['point'] += 100000
   elif "Предметы" == message.text:
     bot.reply_to(message, "soon...")
